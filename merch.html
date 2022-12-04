@@ -4,27 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="./styles.css" />
+    <link type="text/css" rel="stylesheet" href="./merch.css" />
+    <script src="merch-script.js"></script>
     <title>Del Montey</title>
   </head>
-  <body>
+  <body id="background">
     <header id="background">
-      <img class="img-resize" src="./IMGS/EYES_Resized.png" alt="EYES-LOGO" />
+      <h1 class="title">Del Montey</h1>
+      <a href="./index.html"><img class="img-resize" src="./IMGS/EYES_Resized.png" alt="EYES-LOGO" /></a>
       <nav>
-        <a class="link-text" href="./merch.html">Merchandise</a>
-        <a class="link-text" href="./projects.html">Projects</a>
-        <a class="link-text" href="./merch.html">Merchandise</a>
+        <a class="link-text" id="projects-link" href="./projects.html"
+          >Projects</a
+        >
+        <a class="link-text" id="merch-link" href="./merch.html">Merchandise</a>
       </nav>
     </header>
     <section>
-      <div>
-        <img src="" alt="" />
-        <img
-          class="img-resize"
-          src="./IMGS/DEAD_MONTEY.png"
-          alt="DEAD_MONTEY"
-        />
-        <img class="img-resize" src="./IMGS/EYES_SHIRT.PNG" alt="EYES-SHIRT" />
+      <div class="row">
+        <div class="column">
+          <img
+            class="merch-image"
+            src="./IMGS/DEAD_MONTEY_rs.png"
+            alt="DEAD_MONTEY"
+            onclick="imgModifications(this);"
+          />
+          </div>
+        </div>
+        <div class="column-2">
+          <img
+            class="merch-image"
+            src="./IMGS/EYES_SHIRT_rs.PNG"
+            alt="EYES-SHIRT"
+            onclick="imgModifications(this);"
+          />
+        </div>
+        <div class="column-3">
+            <img
+            class="merch-image"
+            src="IMGS/Bad-News_rs.PNG"
+            alt="EYES-SHIRT"
+            onclick="imgModifications(this);"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <span
+          onclick="this.parentElement.style.display='none'"
+          class="close-button"
+          >&times;</span
+        >
+        <img id="expandedImg" style="width: 50%" />
+        <div id="imgtext"></div>
+        <div class="overlay">
+        <div class="overlay-text">DEAD MONTEY SERIES SHIRT:
+          $39.99
+        </div>
       </div>
     </section>
     <footer id="background" class="footer-logo">
