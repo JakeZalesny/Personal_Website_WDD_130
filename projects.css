@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap");
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #12171c;
+  --secondary-color: #aaaaa8;
+  --accent1-color: #5d1111;
+  --accent2-color: #a39b97;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Playfair Display", serif;
+  --paragraph-font: "Raleway", sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #12171c; /* headlines on a white background */
+  --headline-color-on-color: #aaaaa8; /* headlines on a colored background */
+  --paragraph-color-on-white: #12171c; /* paragraph text on a white background */
+  --paragraph-color-on-color: #a39b97; /* paragraph text on a colored background */
+  --paragraph-background-color: #5d1111;
+  --nav-link-color: #aaaaa8;
+  --nav-background-color: #5d1111;
+  --nav-hover-link-color: #5d1111;
+  --nav-hover-background-color: #a39b97;
+}
+
+nav {
+  display: grid;
+  background-color: var(--nav-background-color);
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  font: var(--heading-font);
+  font-size: 20px;
+  margin-top: -220px;
+  z-index: 1;
+}
+
+a:hover {
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+}
+
+.link-text {
+  text-align: center;
+  text-decoration: none;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  color: var(--nav-link-color);
+}
+
+.img-resize {
+  height: 400px;
+  width: 400px;
+  background-color: var(--accent1-color);
+  margin-top: -260px;
+  z-index: 2;
+}
+
+#background {
+  background-color: var(--primary-color);
+}
+
+#graveyard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -550px;
+}
+
+#every-night {
+  display: block;
+  margin-left: 70%;
+  margin-top: 500px;
+}
+
+#projects-link {
+  grid-column: 2/3;
+}
+
+#merch-link {
+  grid-column: 3/3;
+}
+
+.title {
+  font-style: var(--heading-font);
+  color: var(--headline-color-on-color);
+  margin-left: 700px;
+  font-size: 100px;
+}
+
+.footer-logo {
+  margin-top: 700px;
+}
+
+.instructions {
+  display: block;
+  font-style: var(--heading-font);
+  color: var(--accent2-color);
+  font-size: 50px;
+  margin-top: 200px;
+  margin-left: 600px;
+  margin-bottom: -200px;
+}
+
+#scars {
+}
+
+#graveyard-audio {
+}
+
+#i-think-i-like-you {
+}

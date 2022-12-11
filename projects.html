@@ -4,27 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="./styles.css" />
+    <link type="text/css" rel="stylesheet" href="./projects.css" />
+    <script src="projects-script.js"></script>
     <title>Del Montey</title>
   </head>
-  <body>
+  <body id="background">
     <header id="background">
-      <img class="img-resize" src="./IMGS/EYES_Resized.png" alt="EYES-LOGO" />
+      <h1 class="title">Del Montey</h1>
+      <a href="./index.html"
+        ><img class="img-resize" src="./IMGS/EYES_Resized.png" alt="EYES-LOGO"
+      /></a>
       <nav>
-        <a class="link-text" href="./merch.html">Merchandise</a>
-        <a class="link-text" href="./projects.html">Projects</a>
-        <a class="link-text" href="./merch.html">Merchandise</a>
+        <a class="link-text" id="projects-link" href="./projects.html"
+          >Projects</a
+        >
+        <a class="link-text" id="merch-link" href="./merch.html">Merchandise</a>
       </nav>
     </header>
     <section>
+      <h1 class="instructions">Hover to listen!</h1>
       <div>
-        <img class="img-resize" src="./IMGS/EVERY NIGHT.png" alt="GRAVEYARD" />
+        <audio id="scars">
+          <source src="./AUDIO/scars.mp3"></source>
+        </audio>
+        
         <img
           class="img-resize"
+          id="every-night"
+          src="./IMGS/EVERY NIGHT.png"
+          alt="GRAVEYARD"
+          onmouseenter="playScars();"
+          onmouseleave="stopScars();"
+        />
+        <audio id="graveyard-audio">
+          <source src="./AUDIO/GRAVEYARD_PARADISE.mp3"></source>
+        </audio>
+        <img
+          class="img-resize"
+          id="graveyard"
           src="./IMGS/GRAVEYARD cover.png"
           alt="GRAVEYARD"
+          onmouseenter="playGraveyard();"
+          onmouseleave = "stopGraveyard();"
         />
-        <img class="img-resize" src="./IMGS/Nice Girls .png" alt="NICE-GIRLS" />
+        <audio id="i-think-i-like-you">
+          <source src="./AUDIO/i think i like you.mp3"></source>
+        </audio>
+        <img class="img-resize" src="./IMGS/Nice Girls .png" alt="NICE-GIRLS" onmouseenter="playITILY();" onmouseleave="stopITILY();" />
       </div>
     </section>
     <footer id="background" class="footer-logo">
